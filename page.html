@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git vs GitHub</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Estilos adicionais */
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .command-example {
+            background-color: #f7f7f7;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .command-example code {
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mt-5 mb-4">Git vs GitHub</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="section-title">Git</h2>
+                <p>Git é um sistema de controle de versão distribuído amplamente utilizado por desenvolvedores de
+                    software.</p>
+                <h3 class="section-title">Principais comandos do Git:</h3>
+                <div class="command-example">
+                    <code>git init</code>: Inicializa um repositório Git em um diretório.
+                </div>
+                <div class="command-example">
+                    <code>git add</code>: Adiciona arquivos ao índice.
+                </div>
+                <div class="command-example">
+                    <code>git commit -m "Mensagem de commit"</code>: Grava as alterações no repositório com uma mensagem
+                    de commit.
+                </div>
+                <div class="command-example">
+                    <code>git status</code>: Mostra o status atual do repositório, incluindo arquivos modificados,
+                    adicionados e não rastreados.
+                </div>
+                <div class="command-example">
+                    <code>git log</code>: Mostra o histórico de commits do repositório.
+                </div>
+                <div class="command-example">
+                    <code>git push origin master</code>: Envia as alterações locais para o branch master de um
+                    repositório remoto chamado "origin".
+                </div>
+                <div class="command-example">
+                    <code>git pull origin master</code>: Puxa as alterações do branch master de um repositório remoto
+                    chamado "origin" para o repositório local.
+                </div>
+                <div class="command-example">
+                    <code>git branch</code>: Lista todos os branches no repositório e mostra o branch atual com um
+                    asterisco.
+                </div>
+                <div class="command-example">
+                    <code>git checkout -b novo-branch</code>: Cria um novo branch chamado "novo-branch" e muda para ele.
+                </div>
+                <div class="command-example">
+                    <code>git merge outro-branch</code>: Combina as alterações do branch "outro-branch" com o branch
+                    atual.
+                </div>
+                <div class="command-example">
+                    <code>git remote add origin URL</code>: Adiciona um repositório remoto chamado "origin" com a URL
+                    especificada.
+                </div>
+                <div class="command-example">
+                    <code>git clone URL</code>: Clona um repositório remoto para o diretório local.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2 class="section-title">GitHub</h2>
+                <p>GitHub é uma plataforma de hospedagem de código-fonte baseada em Git. Além de hospedar repositórios,
+                    oferece recursos colaborativos e de gerenciamento.</p>
+                <h3 class="section-title">Principais recursos do GitHub:</h3>
+                <ul>
+                    <li>Hospedagem de repositórios Git.</li>
+                    <li>Colaboração através de pull requests.</li>
+                    <li>Controle de versões e histórico de alterações.</li>
+                    <li>Gerenciamento de problemas e tarefas.</li>
+                    <li>Integração com ferramentas de CI/CD.</li>
+                    <li>Revisão de código e discussão.</li>
+                    <li>Wikis e documentação de projetos.</li>
+                    <li>GitHub Actions para automação de fluxos de trabalho.</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="section-title">Exemplos Práticos</h2>
+                <p>Aqui estão alguns exemplos práticos dos comandos do Git em ação:</p>
+                <div class="command-example">
+                    <p><strong>Exemplo 1:</strong> Como inicializar um repositório Git:</p>
+                    <code>git init</code>
+                    <p>Este comando cria um novo repositório Git no diretório atual.</p>
+                </div>
+                <div class="command-example">
+                    <p><strong>Exemplo 2:</strong> Como adicionar arquivos ao índice:</p>
+                    <code>git add index.html</code>
+                    <p>Este comando adiciona o arquivo "index.html" ao índice para prepará-lo para um commit.</p>
+                </div>
+                <div class="command-example">
+                    <p><strong>Exemplo 3:</strong> Como gravar alterações no repositório:</p>
+                    <code>git commit -m "Mensagem do commit"</code>
+                    <p>Este comando grava as alterações adicionadas ao índice no repositório com uma mensagem de commit.
+                    </p>
+                </div>
+                <div class="command-example">
+                    <p><strong>Exemplo 4:</strong> Como verificar o status do repositório:</p>
+                    <code>git status</code>
+                    <p>Este comando mostra o status atual do repositório, incluindo arquivos modificados, adicionados e
+                        não rastreados.</p>
+                </div>
+                <div class="command-example">
+                    <p><strong>Exemplo 5:</strong> Como visualizar o histórico de commits:</p>
+                    <code>git log</code>
+                    <p>Este comando exibe o histórico de commits do repositório, mostrando informações como autor, data
+                        e mensagem de cada commit.</p>
+                </div>
+                <div class="command-example">
+                    <p><strong>Exemplo 6:</strong> Como criar um novo branch:</p>
+                    <code>git branch nome-do-branch</code>
+                    <p>Este comando cria um novo branch com o nome especificado.</p>
+                </div>
+                <div class="command-example">
+                    <p><strong>Exemplo 7:</strong> Como mudar para outro branch:</p>
+                    <code>git checkout nome-do-branch</code>
+                    <p>Este comando muda para o branch especificado.</p>
+                </div>
+                <div class="command-example">
+                    <p><strong>Exemplo 8:</strong> Como combinar alterações de um branch para outro:</p>
+                    <code>git merge nome-do-branch</code>
+                    <p>Este comando combina as alterações do branch especificado com o branch atual.</p>
+                </div>
+                <div class="command-example">
+                    <p><strong>Exemplo 9:</strong> Como remover um arquivo do repositório:</p>
+                    <code>git rm arquivo.txt</code>
+                    <p>Este comando remove o arquivo especificado do repositório e do diretório de trabalho.</p>
+                </div>
+                <div class="command-example">
+                    <p><strong>Exemplo 10:</strong> Como desfazer as alterações em um arquivo não commitadas:</p>
+                    <code>git checkout -- arquivo.txt</code>
+                    <p>Este comando descarta as alterações não commitadas no arquivo especificado.</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row mb-5">
+            <div class="col-md-12">
+                <h2 class="section-title">Conclusão</h2>
+                <p>O Git e o GitHub são ferramentas essenciais para o desenvolvimento de software colaborativo. Dominar
+                    os comandos do Git e aproveitar os recursos do GitHub podem aumentar significativamente a eficiência
+                    e a qualidade do seu trabalho.</p>
+                <p>Continue explorando e praticando para aprimorar suas habilidades!</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
